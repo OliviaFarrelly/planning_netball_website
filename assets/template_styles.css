@@ -1,42 +1,76 @@
 :root{
     --base-back: rgb(150,150,150);
     --black: rgb(0,0,0);
+--bs-nav-bg: rgb(142, 162, 172);
+--bs-background-bg: rgb(230, 230, 230);
 }
+
 
 body{
     margin: 0;
     padding: 0;
     font-size: 100%;
+    background-color: var(--bs-background-bg);
 }
 
 
 .header{
-    background-color: var(--base-back);
+    background-color: rgb(155, 150, 150);
 }
 h1{
     color:white;
     text-align: left;
 }
 
-/* -- navigation --- */
-.navbar{
-    background-color:  var(--black);
-    border-bottom: 1px solid black;
-
-}
-
-.nav-item:hover{
-    background-color:var(--brand-green-pale);
-}
-
-.nav-link{
+h3 {
     font-size: 1.5em;
-    color:var(--base-back);
-}
-.nav-link:hover{
-    color:white;
 }
 
+.sprint{text-align: center;}
+
+.h3{font-size: 1.5em;
+        padding-left: 10px;}
+
+.col-sm-6{padding: 0;}
+
+/* -- navigation --- */
+.nav-link{font-size: 1em;
+  }
+
+ .navbar{
+  background-color: var(--bs-nav-bg);
+  padding-left: 5px;
+  }
+
+.navbar-text{
+    text-align: right;
+    width: 100%;
+    padding-right: 20px;
+    background-color: var(--bs-nav-bg);
+  }
+
+.jump-target{text-align: center;
+                font-size: 3em;}
+
+ .jump-target::before{
+          content: "";
+          display: block;
+          height: 80px;
+          margin: -70px 0 0 0;
+ }
+
+ .maintext{
+    font-size: 1.05em;
+    text-align: center;
+}
+
+ .subheading{
+    text-align: center;
+    font-size: 15px;
+     font-style: italic;
+}
+
+ .plan{background-color: rgb(240, 245, 246);}
 footer{
     background-color: var(--base-back);
     text-align: center;
@@ -46,9 +80,7 @@ footer{
 }
 
 
-.row{
-    background-color: var(--base-back);
-}
+
 
 
 

@@ -15,9 +15,9 @@
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <div class="container-fluid header p-3">
-    <h1>Site name</h1>
+    <h1>Hot Shots Netball - Planning</h1>
 </div>
-<nav class="navbar navbar-expand-lg px-3 py-2 mb-2">
+<nav class="navbar navbar-expand-lg px-3 py-2 mb-2 sticky-top">
     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon navbar-dark"></span>
     </button>
@@ -25,13 +25,22 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 1</a>
+                <a class="nav-link" href="#">Brief</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
+                <a class="nav-link" href="#">Relevent implications (describe)</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 3</a>
+                <a class="nav-link" href="#">Website</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#db">Databses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Final testing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Relevnt implications (adress)</a>
             </li>
         </ul>
     </div>
@@ -40,14 +49,165 @@
 
 
 <div class="container-lg">
-
+<br>
     <h2>Brief</h2>
-        <hr>
-    <h2>Boards and sprints</h2>
+        <p> I have been asked to develop a website for a netball squad called Hot Shots run by Dave Farrelly,
+            this is a Wellington based squad<br>
+            The objective is to create a website with information about the team and coaches, a place to find
+            information about trains, a draw and results page blight, and a notices page that can also be updated.
+            I also needed to make sure teh website was made fo rteh correct audience and was easy to undertsand and
+            gave clear infromation across to anyone using the website(players, parents, coaches).
+
+    <hr>
+
+
+        Before starting the website I completed some User experince plannig. I looked at a few aspects to make sure my
+        website was created for the correct reassn and teh right audience. Below are a few thingsi looked at when
+        researching for my website.
+        <ul>
+        <li> I looked at the users that would be using this website an dhwat tehy needed to see wehn looking online.
+           </li>
+        <li> I also did some comeptition analysis I looked at other netball websites and deicde what aspects
+            of teh website i liked and worked well fir the website and what apsects didnt work as well </li>
+        <li> I also did research on other webistes that were not netball webistes and found aspects that i liked that
+        i could use as inspiration for my website</li>
+            <li> I also created drawn plans of what i pictured my website to look like (which can always change as teh
+                website starts to be put together)</li>
+        </ul>
+     <h3> Link to user experience planning</h3>
+        <a class="" href="assets/DigtalMediaoutcome.pdf">
+        <img class="img-fluid mx-auto d-block w-75 my-5" src="assets/images/slideshow.png" alt="pic">
+        </a>
+    <hr>
+
+    <h2 class="jump-target" id="db"> Databases </h2>
+       <hr>
+<div class="container-lg mb-2">
+    <h2> Relevant Implications Summary</h2>
+    <!-- groovy bootstrap list -->
+
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Functionality/Accessibility</div>
+                This means the database should work properly. This means the foreign keys that link tabel together
+                need to be correct so the correct members are associated with the news post they made. Also to keep
+                everything running smoothly the data needs to be consistent meaning the format of dates and times should
+                be kept the same using the SQLite format yYYY-MM-DD HH:MM:00”. To make sure databases are functional,
+                testing is important as well as creating entity relationship diagrams to see how everything should
+                connect with each other.
+
+            </div>
+
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Future-proofing</div>
+                 Future-proofing is about being able to keep your website up to date. Any corrections made should be
+                made in one place and if needed in other tabel stehy should be referenced using foreign keys. Foreign
+                key means if the member is authorised to update teh notices the member tabel will have to be linked to
+                the notices table using a foreign key. This means that if there were any updates done to a name or a
+                otice it would be changed without needing to change a lot of different code. Whether the information
+                can be easily altered and old data can be removed, adding new information allows users to update the
+                website on the website rather than having to go through code and having to change a range of things
+                and altering what is already there.
+
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Privacy</div>
+                Privacy is about making sure the data from the website and personal data is kept private. Passwords
+                should be kept hidden when they are typing them. As Well as making sure that the data from the
+                databases is kept private meaning that when users access the webpage they should be taken to the
+                webpage not to the data folder. It is also important to respect users' privacy so only collecting
+                information that is needed for the website so you're not extracting unnecessary private information
+                from users so there is less to keep private for them.
+</div>
+        </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">End user considerations</div>
+                This aspect was ensuring the database was arranged and organised to meet the needs of the users.
+                It needs to be clear and easy to view as well as easy to understand. The database should be easy for
+                the user to understand so forms that allow users to change aspects of the website should be easy to
+                follow and should have validation to minimise errors and also help the user enter correct information
+                to avoid problems.
+
+            </div>
+        </li>
+    </ol >
+    <hr>
+</div>
+
+    <h3>Boards and sprints</h3>
         <hr>
         <!-- Heading levels -->
-            <h3>Sprint One</h3>
-            <p>Plan</p>
+            <h3 class="sprint">Sprint One</h3>
+            <p><b><i>Brief</i></b><br>
+            In this sprint, I wanted to start adding the aspect of databases to my webpage. I first started with my
+                notices section. I wanted to create a delete, add, and update section for this section. This allows
+                authorised users to update and change the notice section to make it more relevant and up-to-date. I
+                said the date and time and who submitted or made the notice change so people who know who made it
+                and when they made it could clearly understand what the notice is trying to say.
+</p>
+<div class="container-lg plan">
+
+        <div class = "row">
+                <div class = "col-sm-6 backing">
+            <img class="img-fluid" src="assets/images/sprint4-plan.png">
+            </div>
+              <div class = "col-sm-6 backing">
+              <h3 class="h3">Plan</h3>
+              <hr>
+                  <p class="subheading"> First, I created two tables: a notices table and a member table. The notice
+                      table holds all the information about the notice so the title content, and the date. This is
+                      connected to the member table, which has information on the coaching staff and the team members,
+                      their emails and passwords, and whether they are authorised to make changes.
+
+        </p>
+              <p class="maintext">Tables are an excellent way to keep all information stored in one place. The tables
+                  to the sides were created as a diagram to show how all my tables connect. The notices table is
+                  combined with a member id associated with a member authorised to change the notice page.
+
+        </p>
+            </div>
+
+        </div>
+
+    <div class = "row">
+            <div class = "col-sm-6 backing">
+              <br>
+              <h3 class="h3">Project backlog</h3>
+              <hr>
+
+              <p class="maintext"> This is my project backlog, showing everything I needed to get done for the homepage of my website.
+                  This photo was taken halfway through working through databases.
+
+        </p>
+            </div>
+                   <div class = "col-sm-6 backing">
+                <img class="img-fluid" src="assets/images/Sprint-4-board.png" >
+                   </div>
+
+              </div>
+
+</div>
+    <br>
+        <p><b><i>Testing</i></b><br>
+            In this sprint, I created a page that allowed me to test aspects of the database before adding it to the
+            website. Testing will enable me to try parts of my website to ensure it works before adding them to the
+            main website. As seen below, I tested to see if I could get information out of the tables and out onto a
+            page. I pulled out two notices, and from the photos, you can see that the tables are working, and I was
+            able to pull information out of them.
+        </p>
+
+    <div class="row">
+        <div class="col-md-6 my-2">
+           <img class="img-fluid mx-auto d-block" src="assets/images/testingcode-sprint4.png">
+        </div>
+        <div class="col-md-6 my-2">
+            <img class="img-fluid mx-auto d-block" src="assets/images/Testing-output-sprint4.png" ></div>
+    </div>
             <p>Boards</p>
             <p>Link to the Canvas Page</p>
             <p>Test</p>
@@ -95,34 +255,6 @@
         <hr>
 </div>
 <!-- -->
-<div class="container-lg mb-2">
-    <h2> Relevant Implications Summary</h2>
-    <!-- groovy bootstrap list -->
-    <ol class="list-group list-group-numbered">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <div class="fw-bold">Subheading</div>
-                Content for list item
-            </div>
-            <span class="badge bg-primary rounded-pill">14</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <div class="fw-bold">Subheading</div>
-                Content for list item
-            </div>
-            <span class="badge bg-primary rounded-pill">14</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <div class="fw-bold">Subheading</div>
-                Content for list item
-            </div>
-            <span class="badge bg-primary rounded-pill">14</span>
-        </li>
-    </ol>
-    <hr>
-</div>
 
 <div class="container-lg">
 <h2>Example code presentations</h2>
