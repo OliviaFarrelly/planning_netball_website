@@ -26,10 +26,18 @@ h3 {
     font-size: 1.5em;
 }
 
+
 .sprint{text-align: center;}
 
+.Erd{padding-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.html{  font-size: .875em;
+    }
 .h3{font-size: 1.5em;
-        padding-left: 10px;}
+       text-align: center;
+}
 
 .col-sm-6{padding: 0;}
 
@@ -59,9 +67,12 @@ h3 {
           margin: -70px 0 0 0;
  }
 
+
  .maintext{
     font-size: 1.05em;
     text-align: center;
+     padding-right: 1em;
+     padding-left: 1em;
 }
 
  .subheading{
