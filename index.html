@@ -65,13 +65,13 @@
         website was created for the correct reassn and teh right audience. Below are a few thingsi looked at when
         researching for my website.
         <ul>
-        <li> I looked at the users that would be using this website an dhwat tehy needed to see wehn looking online.
+        <li> I looked at the users that would be using this website and what they needed to see wehn looking online.
            </li>
         <li> I also did some comeptition analysis I looked at other netball websites and deicde what aspects
-            of teh website i liked and worked well fir the website and what apsects didnt work as well </li>
+            of the website i liked and worked well for the website and what apsects didnt work as well </li>
         <li> I also did research on other webistes that were not netball webistes and found aspects that i liked that
         i could use as inspiration for my website</li>
-            <li> I also created drawn plans of what i pictured my website to look like (which can always change as teh
+            <li> I also created drawn plans of what i pictured my website to look like (which can always change as the
                 website starts to be put together)</li>
         </ul>
      <h3> Link to user experience planning</h3>
@@ -89,7 +89,7 @@
     <ol class="list-group list-group-numbered">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <div class="fw-bold">Functionality/Accessibility</div>
+                <div class="fw-bold">Functionality</div>
                 This means the database should work properly. This means the foreign keys that link tabel together
                 need to be correct so the correct members are associated with the news post they made. Also to keep
                 everything running smoothly the data needs to be consistent meaning the format of dates and times should
@@ -492,26 +492,97 @@ create table notices(
     <ol class="list-group list-group-numbered">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <div class="fw-bold">Functionality/Accessibility</div>
+                <div class="fw-bold">Functionality</div>
+                Another critical aspect of a database is functionality. I tested different aspects of my website to
+                ensure everything was running smoothly. When I first started creating my databases, I tested to see if
+                I could pull information from the table about notices and what members wrote the notices. This was
+                important as it allowed me to see if I could get this information out before adding it to the rest of
+                my website. This ensured there weren't any problems with the extraction of data. If there was, I could
+                tweak the code before adding it to my main page. I tested throughout the databases and a few tests are
+                seen in the sprints above. Testing was essential to make sure my database was functional. I also ensured
+                that no data was written twice for different tables. I ensured this by connecting tables with foreign
+                keys. This helped ensure that information was not printed twice or inaccurate and doubled. I could
+                extract information from different tables and print them out onto the page. This meant I didn't have
+                to rewrite information repeatedly and made everything more concise and clear. This also meant if
+                something was updated, it changed on every table that included the information, rather than having to
+                change multiple aspects simultaneously. For example, if I changed a member's name, it would update the
+                rest of the databases as the tables are all connected. This is all done with the foreign keys. I also
+                ensured I kept the SQLite format “YYYY-MM-DD HH: MM:00” for dates. This allowed the data to be used all
+                around the databases without causing any crashes. Keeping the same format so that everything would run
+                smoothly, using the same format allowed me to use that information and just extract the parts I needed.
+                This means I can use the date all over the database without any errors because all the data format is
+                the same. Keeping the format ensures fewer errors and allows everything to pass through the same and
+                run smoothly. The functionality of databases is very important, and keeping the format of aspects
+                similar is very important to lower the risks of errors.
+
 
             </div>
 
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
                 <div class="fw-bold">Future-proofing</div>
+                An important, relevant implication is future-proofing. How my database is created allows me to easily
+                keep it up to date, whether it is adding new aspects of the database or updating or deleting aspects
+                of the database. Using tables allows me to add new draws or notices as examples without sifting through
+                the code. Having tables will allow me to add new database features (like connecting the register page
+                and becoming a member) without updating any tables already there. This lowers the risk of causing
+                errors as you're not messing with anything that is pre-existing. This makes it easier for users to
+                update the website without having an understanding of the makeup of the website, as they don't have
+                to change any preexisting code. As said above, the foreign keys help with updating the webpage. This
+                means updates would only have to happen in the table, and any aspects of the database that are connected
+                with the table you have changed will be updated. Also, updating exciting aspects of the website, like
+                the draws and results, can happen on the web page; this can happen due to the databases. This makes it
+                easier for users as there are clear forms only authorised users can fill out to add, delete and update
+                the results and notices of the draw. This makes updating the website much clearer and doesn't lower the
+                risk of an unexpressed user trying to go through the code and missing the code. Allowing authorised
+                users only to update the website makes sure the information on the page is reliable and accurate,
+                making the website one that people can rely on and trust as the days go by.
+.
+
             </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
                 <div class="fw-bold">Privacy</div>
+                When creating a database for a netball squad, privacy was very important. Privacy is essential to
+                protect individuals, as in the user's personal and squad's data. It is important to protect users'
+                information as if it gets leaked, people will not be happy as that is a breach of their privacy but
+                can also buy them at risk and make them less safe. The main way I have protected people's privacy is
+                by not asking for too much personal information. Being a website like this, we are in charge of
+                collecting and protecting users' information, dn it's our job to ensure their information is kept safe.
+                I just collected their Name, ages and email to communicate with them if they join the squad. I have not
+                asked for their phone number or address, which protects their location and phone number if anything
+                happens and their information gets out. I also didn't want to collect information that is not needed
+                in the databases for a few reasons: one, it takes up unnecessary space. But the main reason is that
+                it's unnecessary personal information that we have to keep protected. Keeping the amount of personal
+                information to a minimum helps to protect the user that's providing us with the information but makes
+                things easier for us as there is less information to keep protected. One problem is that in the
+                database, the password that people log in to their account with is not protected in the database if
+                someone has access to the code, they can see people's passwords which is a great way of protecting
+                people's privacy if I were to develop my database, further, this would be an area which would need
+                some work and focus. I want the website to respect people's privacy so some aspects might need further
+                development.
+
+
 
 </div>
         </li>
             <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
                 <div class="fw-bold">End user considerations</div>
-
-
+                The information I have put in a database is accessible through a website. It is essential that the data
+                accessible on the website is laid out in a way the users would be familiar with. This meant the styles,
+                colours, and fonts followed the trend of the rest of the website. It is crucial that this happens so
+                the users do not get too overwhelmed with multiple different styles. It also helps them to feel
+                confident that they are still on the same website as all the looks of the way the data is portrayed
+                is the same as the rest of the website. I did this by ensuring the colours lined up, for example, when
+                adding new data and updating pre-existing data forms, are used. These forms can be styled to follow the
+                trend of the rest of the webpage. This told them they were updating or adding information to the right
+                webpage not only when a change has been made to the page, whether it is a new notice or an update to
+                the notices page; for example, when you submit the change it takes you back to the page where your
+                data will be displayed so the user can get confirmation that here change has been made, an error page
+                will also be displayed when something goes wrong to help the user know what they have done wrong and
+                how to fix it.
             </div>
         </li>
     </ol >
