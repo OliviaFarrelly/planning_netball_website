@@ -28,10 +28,10 @@
                 <a class="nav-link" href="#">Brief</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Relevent implications (describe)</a>
+                <a class="nav-link" href="#RID">Relevent implications (describe)</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Website</a>
+                <a class="nav-link" href="#W">Website</a>
             </li>
              <li class="nav-item">
                 <a class="nav-link" href="#db">Databses</a>
@@ -40,7 +40,7 @@
                 <a class="nav-link" href="#">Final testing</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Relevnt implications (adress)</a>
+                <a class="nav-link" href="#RIA">Relevnt implications (adress)</a>
             </li>
         </ul>
     </div>
@@ -80,7 +80,7 @@
         </a>
     <hr>
 
-    <h2> Relevant Implications (Describe)</h2>
+    <h2 class="jump-target" id="RID"> Relevant Implications (Describe)</h2>
       <ol class="list-group list-group-numbered">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
@@ -149,11 +149,13 @@
 
             </div>
         </li>
-    </ol >
-    <hr>
+    </ol>
 </div>
+
+
 <div class="container-lg plan" >
-        <h3>Boards and sprints</h3>
+    <hr>
+        <h3 class="jump-target" id="W">Boards and sprints</h3>
     <hr>
     <p style="font-size: 1.1em; text-align: center"> Here are my project backlogs for my pages. These were created at the start of teh deisgn
         process to help create a timeline to understand what is the most important and less important to help get the
@@ -254,7 +256,7 @@ This first sprint aimed to create the website's front page. I started by gatheri
 
     <p><b><i>Some interetsing code</i></b><br></p>
     <p> I kept the two colours I used in an area together so I could pull from that any time I needed. This allowed me to
-        keep the colours of my page similar throughout to ensure my website flowed.
+        keep the colours of my page similar throughout to ensure my website flowed and everything worked cohesively.
  </p>
 
 
@@ -267,7 +269,265 @@ This first sprint aimed to create the website's front page. I started by gatheri
 
 </code>
 </pre>
+
+        <hr>
+
+<h3 class="sprint">Sprint Two</h3>
+            <p><b><i>Brief</i></b><br>
+                In this sprint, I used Flask to create two more pages for my design, the team page, which included
+                all the information about training, umpiring, fees and uniform, and the draws and results page, which
+                consisted of draws and results from previous and upcoming weeks. Flask is a Python framework. Flask
+                works by using a template. You want to keep the things in the template the same for every page. You then
+                \can add the information for each page into it separately. These pages are run off a server, where all
+                the styles, images and other templates are stored. Flask is helpful to help keep things consistent over
+                all your pages with no extra work needed.
+</p>
+
+
+        <div class = "row">
+
+
+
+              <p><b><i>Project Backlog</i></b>
+
+
+              <p> These are my project backlogs, showing everything I needed to get done for the teampage
+                  as well as my draws and results pages of my website. This photo was taken halfway through working
+                  through databases.These project bcklogs helped me keep my time managment they also gave my points where
+                  i could get feedback and keeping to a schedule helped give me time to be able to make changes that
+                  the stakeholder thought was beneficial in mking the website more accesible for the users.
+
+        </p>
+            <div class = "row" style="text-align: center">
+            <div class = "col-sm-6 backing" style="padding-left: 1em;" >
+                 <img class="img-fluid" src="assets/images/draws&results-projectbacklog.jpg"  alt="HP board">
+            </div>
+                   <div class = "col-sm-6 backing" style="padding-left: 1em">
+                <img class="img-fluid" src="assets/images/teampageprojectbacklog.jpg"  alt="HP board">
+                   </div>
+
+              </div>
+
+
+    </div>
+    <br>
+    <p><b><i>Reflect</i></b><br></p>
+             <ul >
+                <li>I created a server for this sprint that helped me connect all my pages. I also made a layout page.
+                    This page had all the code that I wanted to keep consistent throughout my page. This helped my
+                    different pages flow nicely. In my layout, I had the footer, the navbar, and the background colour
+                    to ensure everything stayed the same for the pages. This allowed me to focus on the new aspects
+                    of the websites rather than having to copy and paste code repeatedly and risk causing errors.
+
+<br></li>
+                <li>
+                    I liked how I kept my team page simple, using columns to separate different information using lots
+                    of photos. I also liked using tables to make my draws and results page understandable. The simple
+                    clear columns and tables help to keep everything crisp and less overwhelming. This helped make
+                    these pages more clear to understand talking to my stakeholder. They liked the columns as they said
+                    it made it easier to follow and they didn't get lost. They said they were able to go onto the page
+                    and clearly locate the information they need with the columns and tables.
+
+<br></li>
+                   <li>I created a drop-down nav bar as I wanted to be able to have two different pages for draws and
+                       results. This allowed users to go to one place on the navbar for draws and results however they
+                       were able to select which one they wanted to see. Having these two separate pages made the
+                       stakeholders less overwhelmed. They said it was nice to have separation between the two so you
+                       could have all the information for draws or results on one page so everything wasn't mixed up.
+
+<br></li>
+                <li>Further down the track, I need to figure out how to update these pages as the draws change weekly.
+                    This is a next step and further down the track I would like to add databases to my website so I'm
+                    able to make changes on the page without having to change the code every week.
+
+ </li>
+        </ul>
+
+
+
+    <hr>
+       <div class="row">
+        <div class="col-sm-6">
+    <p class="subheading"><b>This is a video of how the draws and results page looks</b></p>
+            </div>
+            <div class="col-sm-6">
+    <p class="subheading"><b>This is a video of how the team page looks</b></p>
+            </div>
+       </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-6">
+        <video controls>
+            <source src="assets/vids/Draws&results-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+        <div class="col-sm-6">
+     <video controls>
+            <source src="assets/vids/Teampage-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+            </div>
+        </div>
+ <p>Overall the look of the page and the way the layout was clear and not overwhelming which is how I wanted it to look.
+     My users found it easy to follow and was able to understand the code. They found it aesthetically pleasing which is
+     very important when it comes to a website. Not only this, they also found that the information on the page was
+     concise and there was no unnecessary information. Having only the important information on the page meant that
+     users don't have to sift through random information to find what they were looking for. Having clear labels in
+     columns helped draw the user's eyes to wear to look. Have tables with dates for the draws page he,epd the users
+     easily find what they were trying to find. Also having dates in order allowed users to find their dates clearly.
+     Overall the website is looking and also functioning as it needs to. Next steps are to learn how to add databases
+     to the pages so i'm able to update and edit the pages,
+
+</p>
+    <p><b><i>Some interetsing code</i></b><br></p>
+    <p> Here is code from my server. This shows how all the different pages run and can all be connected
+        through one area.</p>
+
+
+<pre style="padding-left: 5em">
+<code class="py">
+
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def index():
+    return render_template("index.html")
+
+
+@app.route('/team')
+def team():
+    return render_template("team.html")
+
+
+@app.route('/draws')
+def draws():
+    return render_template("draws.html")
+
+
+@app.route('/results')
+def results():
+    return render_template("results.html")
+
+</code>
+</pre>
+
+    <h3 class="sprint">Sprint Three</h3>
+            <p><b><i>Brief</i></b><br>
+
+
+</p>
+
+
+        <div class = "row">
+
+    <div class = "row">
+            <div class = "col-sm-6 backing">
+              <br>
+              <h3 class="h3">Project backlog</h3>
+              <hr>
+
+              <p class="maintext"> This is my project backlog, showing everything I needed to get done for the homepage of my website.
+                  This photo was taken halfway through working through databases. A project backlog is to help create a timeline
+                  of what needs to be completed for each sprint. The tasks are put in priority order this helps ensure that the
+                  websites aspects that are more important are prioritised so the website is created to its best ability.
+
+        </p>
+            </div>
+                   <div class = "col-sm-6 backing">
+                <img class="img-fluid" src="assets/images/homepageprojectbacklog.png"  alt="HP board">
+                   </div>
+
+              </div>
+
+
+    </div>
+    <p><b><i>Reflect</i></b><br></p>
+             <ul >
+                <li>For this sprint, I also used a flask to keep the layout the same. I created a form first. This form
+                    asked for different information needed for a person entering the squad. This allowed users to put
+                    in their registration to the team. It was a clear easy form to follow and the stakeholders told me
+                    it was easy to understand which was very important.
+
+<br></li>
+
+                <li>I also made sure that the information on the form wasn't anything unnecessary or too personal,
+                    this meant I was respecting users' privacy. Not asking for too much personal information was for
+                    their state but also meant there was less information we had to keep protected that we didn't
+                    actually need. This allowed users to rely on our website as we weren't not asking for information
+                    that might seem creepy and like we are asking for too much from them. Checking with my stakeholders
+                    they said that it was perfect that we were not asking for too much personal information as it made
+                    the users feel more safe with what they were entering.
+
+<br></li>
+
+                <li>The register page has two buttons, a cancel button which takes you back to the home page, or a
+                    submit button. The submit button took you to a new page I created called confirm. This page
+                    is where you could either cancel your form, go back to the form page and edit it or submit your
+                    form. I did this because some [people make mistakes when typing information, so having this page
+                    allowed them to check their data before submitting it. Being able to check information makes sure
+                    that the people registering will be properly registered and be able to participate in the squad
+                    which is very important.
+ </li>
+        </ul>
+    <hr>
+    <p class="subheading"><b>This is a video of how the register page aswell as the confirm page looks and works</b></p>
+    <hr>
+    <video controls>
+            <source src="assets/vids/registerpage-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    <p>Overall the page was looking great teh website has now hot all the necessary information on it and wes looking
+        good. Teh website now was able to give across all the information about the squad as well as notices and draws
+        and results as well as the register page. The website wants to be overwhelming and has kept consensus so that
+        all the information on the web page will be used. The webpage also had clear labels so the users who may not be
+        as familiar with the pages were able to follow it around clearly. The use of flask and bootstrap allowed me to
+        get work done faster in a more concise, clear way which is very important. The use of flasks also allowed us to
+        make fewer errors which was very important and made the development process easier. The next steps for this
+        would be to add databases to the page so users that were authroised can adapt aspects of the website from the
+        website to risk less errors occurring. This is a very important next step as it will make the website more
+        functional. The Look of the website is looking very good so the only change needed is databases as of right now.
+
+</p>
+
+    <br>
+
+    <p><b><i>Some interetsing code</i></b><br></p>
+    <p>
+        This code was taken from my server. This code shows how i pre-filled my form to show how the page works
+ </p>
+
+
+<pre style="padding-left: 5em">
+<code class="py">
+   @app.route('/register', methods=["GET", "POST"])
+def register():
+    if request.method == "POST":
+        f = request.form
+        print(f)
+        return render_template("confirm.html", form_data=f)
+    elif request.method == "GET":
+        temp_form_data = {
+            "firstname": "Olivia",
+            "lastname": "Farrelly",
+            "age": "17",
+            "youremail": "olivia.farrelly@marsden.school.nz",
+            "emergencyemail": "nzsamiam@gmail.com",
+            "About me": "I have played netball for 3 years, and I'm a GA and GS."
+        }
+        return render_template("register.html", **temp_form_data)
+
+
+</code>
+</pre>
+
+        <hr>
 </div>
+
         <hr>
 
     <h2 class="jump-target" id="db"> Databases </h2>
@@ -678,6 +938,9 @@ create table notices(
             <source src="assets/vids/sprint6_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+
+        </div>
+</div>
 <div class="container-lg mb-2">
     <h2> Relevant Implications Addressing</h2>
     <!-- groovy bootstrap list -->
@@ -782,8 +1045,55 @@ create table notices(
 </div>
 
         <hr>
+
+
+        <div class="container-lg mb-2">
+    <h2 class="jump-target" id="RIA"> Relevant Implications Addressing</h2>
+    <!-- groovy bootstrap list -->
+
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Intellectual Property</div>
+
+            </div>
+
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Accesibility</div>
+
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Functionality</div>
 </div>
+        </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Aesthtics</div>
+
+            </div>
+        </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Future Proofing</div>
+
+            </div>
+        </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">End user considerations</div>
+
+            </div>
+        </li>
+    </ol >
 </div>
+
+        <hr>
+
 <!-- -->
 </html>
 
